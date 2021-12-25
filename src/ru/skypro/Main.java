@@ -20,13 +20,13 @@ public class Main {
         float differenceOfWeightOfBoxers = secondBoxer - firstBoxer;
         System.out.println("Difference of the weight of Boxers " + differenceOfWeightOfBoxers + " kg");
 
-        byte bananas = 80;
-        int bananasWeight = bananas * 5;
-        System.out.println("Bananas Weight " + bananasWeight + " g");
+        byte bananaWeightGr = 80;
+        int TotalWeightOfBananas = bananaWeightGr * 5;
+        System.out.println("Bananas Weight " + TotalWeightOfBananas + " g");
 
-        byte milk = 105;
-        int milkWeight = milk * 2;
-        System.out.println("Milk Weight " + milkWeight + " g");
+        byte milkWeightPer100Ml = 105;
+        int milkVolume = milkWeightPer100Ml * 2;
+        System.out.println("Milk Weight " + milkVolume + " g");
 
         byte iceCream = 100;
         int iceCreamWeight = iceCream * 2;
@@ -36,7 +36,7 @@ public class Main {
         int eggsWeight = eggs * 4;
         System.out.println("Eggs Weight " + eggsWeight + " g");
 
-        int productsWeight = bananasWeight + milkWeight + iceCreamWeight + eggsWeight;
+        int productsWeight = TotalWeightOfBananas + milkVolume + iceCreamWeight + eggsWeight;
         System.out.println("Total weight of products " + productsWeight + " g");
 
         float productWeightInKg = productsWeight / 1000f;
@@ -47,12 +47,15 @@ public class Main {
         System.out.println("Total weight for lost in gr " + kgToGr + " gr");
 
         int version250 = 250;
-        int howManyDays1 = kgToGr /  version250;
-        System.out.println("How Many Days version 250gr " + howManyDays1 + " days");
+        int firstDietDays = kgToGr /  version250;
+        System.out.println("How Many Days version 250gr " + firstDietDays + " days");
 
         int version500 = 500;
-        int howManyDays2 = kgToGr /  version500;
-        System.out.println("How Many Days version 500gr " + howManyDays2 + " days");
+        int secondDietDays = kgToGr /  version500;
+        System.out.println("How Many Days version 500gr " + secondDietDays + " days");
+
+        int approximateDaysOfDiet = (firstDietDays + secondDietDays) / 2;
+        System.out.println("Approximately days for diet " + approximateDaysOfDiet + " days");
 
         int oneYearMonths = 12;
 
