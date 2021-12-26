@@ -11,6 +11,8 @@ public class Main {
         long blueberries = 250000000L;
         float cocoa = 2.5f;
         double sugarcane = 250.50;
+        char example = 60000;
+        Boolean example2 = true;
 
         float firstBoxer = 78.2f;
         float secondBoxer = 82.7f;
