@@ -4,66 +4,85 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        //Задача 1
 
-        byte apples = 50;
-        short oranges = 250;
-        int coconuts = 250000;
-        long blueberries = 250000000L;
-        float cocoa = 2.5f;
-        double sugarcane = 250.50;
-        char example = 60000;
-        Boolean example2 = true;
+        byte a = 5;
+        short b = 10;
+        int c = -100;
+        long d = 1000L;
+        float e = 1.77f;
+        double f = 1.7777777;
+        char g = 50000;
+        boolean h = 10 > 5;
 
-        float firstBoxer = 78.2f;
-        float secondBoxer = 82.7f;
-        float totalWeightOfBoxers = firstBoxer + secondBoxer;
+        //Задача 2
+        float boxerOne = 78.2f;
+        float boxerTwo = 82.7f;
+        float totalWeightOfBoxers = boxerOne + boxerTwo;
         System.out.println("Total Weight of Boxers " + totalWeightOfBoxers + " kg");
+        System.out.println("Total Weight of Boxers " + (boxerOne + boxerTwo) + " kg");
+        float weightDifference = boxerOne - boxerTwo;
+        System.out.println("Difference of the weight of Boxers " + weightDifference + " kg");
+        System.out.println("Difference of the weight of Boxers " + Math.abs(boxerOne-boxerTwo) + " kg");
 
-        float differenceOfWeightOfBoxers = secondBoxer - firstBoxer;
-        System.out.println("Difference of the weight of Boxers " + differenceOfWeightOfBoxers + " kg");
+        System.out.println();
 
-        byte bananaWeightGr = 80;
-        int TotalWeightOfBananas = bananaWeightGr * 5;
-        System.out.println("Bananas Weight " + TotalWeightOfBananas + " g");
+        //Задача 3
+        byte banana = 5;
+        int bananaWeight = 80;
+        int totalBananas = banana * bananaWeight;
+        System.out.println("Bananas Weight " + totalBananas + " g");
 
-        byte milkWeightPer100Ml = 105;
-        int milkVolume = milkWeightPer100Ml * 2;
-        System.out.println("Milk Weight " + milkVolume + " g");
+        int milkVolume = 200;
+        int milkWeightPer100Ml = 105;
+        int totalMilk = milkWeightPer100Ml * milkVolume / 100;
+        System.out.println("Milk Weight " + totalMilk + " g");
 
-        byte iceCream = 100;
-        int iceCreamWeight = iceCream * 2;
-        System.out.println("Ice Cream Weight " + iceCreamWeight + " g");
+        byte iceCream = 2;
+        int iceCreamWeight = 100;
+        int totalIceCream = iceCream * iceCreamWeight;
+        System.out.println("Ice Cream Weight " + totalIceCream + " g");
 
-        byte eggs = 70;
-        int eggsWeight = eggs * 4;
-        System.out.println("Eggs Weight " + eggsWeight + " g");
+        int eggs = 4;
+        int eggWeight = 70;
+        int totalEggWeight = eggs * eggWeight;
+        System.out.println("Eggs Weight " + totalEggWeight + " g");
 
-        int productsWeight = TotalWeightOfBananas + milkVolume + iceCreamWeight + eggsWeight;
-        System.out.println("Total weight of products " + productsWeight + " g");
+        int totalWeightOfBreakfast = totalBananas + totalMilk + totalIceCream + totalEggWeight;
+        System.out.println("Total weight of products " + totalWeightOfBreakfast + " g");
 
-        float productWeightInKg = productsWeight / 1000f;
-        System.out.println("Weight of products in kg " + productWeightInKg + " kg");
+        float totalWeightOfBreakfastInKg = totalWeightOfBreakfast / 1000f;
+        System.out.println("Weight of products in kg " + totalWeightOfBreakfastInKg + " kg");
 
+        System.out.println();
+
+        //Задача 4
         byte kg = 7;
         int kgToGr = kg * 1000;
-        System.out.println("Total weight for lost in gr " + kgToGr + " gr");
+        System.out.println("Total weight for loose in gr is " + kgToGr + " gr");
 
-        int version250 = 250;
-        int firstDietDays = kgToGr /  version250;
-        System.out.println("How Many Days version 250gr " + firstDietDays + " days");
+        int diet250Gram = 250;
+        int dietDays250Gram = kgToGr /  diet250Gram;
+        System.out.println("How Many Days version 250gr " + dietDays250Gram + " days");
 
-        int version500 = 500;
-        int secondDietDays = kgToGr /  version500;
-        System.out.println("How Many Days version 500gr " + secondDietDays + " days");
+        int diet500Gram = 500;
+        int dietDays500Gram = kgToGr /  diet500Gram;
+        System.out.println("How Many Days version 500gr " + dietDays500Gram + " days");
 
-        int approximateDaysOfDiet = (firstDietDays + secondDietDays) / 2;
-        System.out.println("Approximately days for diet " + approximateDaysOfDiet + " days");
+        int approximateDaysOfDiet = (dietDays250Gram + dietDays500Gram) / 2;
+        System.out.println("Approximately days for diet are " + approximateDaysOfDiet + " days");
+
+        System.out.println();
+
+        //Задача 5
 
         int oneYearMonths = 12;
+        int percent = 10;
 
         int mashaMonthlySalary = 67760;
         System.out.println("Masha's Salary before was " + mashaMonthlySalary + " usd");
         float mashaSalary10Percent = mashaMonthlySalary + mashaMonthlySalary / 100f * 10;
+       // float mashaSalary10Percent = mashaMonthlySalary * (1 + (percent / 100f * 10));
         System.out.println("Masha's Salary with 10% is " + mashaSalary10Percent + " usd");
         float mashaYearlySalaryBefore = mashaMonthlySalary * oneYearMonths;
         System.out.println("Masha's Yearly Salary before 10% was " + mashaYearlySalaryBefore + " usd");
