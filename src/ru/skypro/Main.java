@@ -5,15 +5,17 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         //Задача 1
+        System.out.println();
+        byte apple = 5;
+        short banana = 10;
+        int carrot = -100;
+        long drink = 1000L;
+        float egg = 1.77f;
+        double g = 1.7777777;
+        char h = 50000;
+        boolean j = 10 > 5;
 
-        byte a = 5;
-        short b = 10;
-        int c = -100;
-        long d = 1000L;
-        float e = 1.77f;
-        double f = 1.7777777;
-        char g = 50000;
-        boolean h = 10 > 5;
+        System.out.println();
 
         //Задача 2
         float boxerOne = 78.2f;
@@ -28,7 +30,7 @@ public class Main {
         System.out.println();
 
         //Задача 3
-        byte banana = 5;
+        byte balloons = 5;
         int bananaWeight = 80;
         int totalBananas = banana * bananaWeight;
         System.out.println("Bananas Weight " + totalBananas + " g");
@@ -113,6 +115,36 @@ public class Main {
         float kristinaYearlyDifferenceOfSalaries = kristinaYearlySalaryAfter - kristinaYearlySalaryBefore;
         System.out.println("Kristina's Yearly Difference of Salaries is " + kristinaYearlyDifferenceOfSalaries + " usd");
 
+        System.out.println();
+
+        //Задача 6
+        int a = 12;
+        int b = 27;
+        int c = 44;
+        int d = 15;
+        int e = 9;
+        int result = a * (b + (c - d * e));
+        System.out.println(result);
+        result = Math.abs(result);
+        System.out.println(result);
+
+        System.out.println();
+
+        //Задача 7
+        int k = 5;
+        int p = 7;
+        k = k + p;
+        p = k - p;
+        k = k - p;
+        System.out.println("k= " + k);
+        System.out.println("p= " + p);
+
+        System.out.println();
+
+        //Задача 8
+        int m = 256;
+        int o = (m % 100)/10;
+        System.out.println(o);
 
     }
 }
